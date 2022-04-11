@@ -40,13 +40,18 @@
           <div id="navigation" class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#" class="nav__link active">Home</a>
+                <a href="#" class="nav__link active" aria-current="page"
+                  >Home</a
+                >
               </li>
               <li class="nav__item">
                 <a href="./surfboard.html" class="nav__link">Surfboard Hire</a>
               </li>
               <li class="nav__item">
                 <a href="./wetsuits.html" class="nav__link">Wetsuit Hire</a>
+              </li>
+              <li class="nav__item">
+                <a href="./lessons.html" class="nav__link">lessons</a>
               </li>
               <li class="nav__item">
                 <a href="./contact.html" class="nav__link">Contact</a>
@@ -76,11 +81,16 @@
         <div class="about__text">
           <h2 class="heading heading--l">About us</h2>
           <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
-            phasellus dolor enim et lectus donec in augue. Velit sit magna
-            sagittis magnis gravida amet, mauris semper accumsan. Eleifend
-            pellentesque turpis tellus amet, lacinia nunc felis vel. Et, ante
-            orci, adipiscing hendrerit.
+            Jacob Jones Came down to Cornwall in the early 2000s on holiday and
+            fell in love with Fistral beach. Fistral beach is one of the world's
+            top surfing destinations. All the big UK competitions take place
+            here including the Famous Night Surf, Boardmaster's Surf
+            Championships, National Surf Championships, and many more. Jacob has
+            loved surfing all his life the only thing he loves more than surfing
+            is teaching people how to surf. At Surfers Paradise you will find
+            everything you need. Whether you are a beginner or experienced we
+            can help you with all your Surfer needs. We look forward to seeing
+            you.
           </p>
         </div>
         <div class="about__imgs">
@@ -90,7 +100,40 @@
         </div>
       </section>
 
-      <section class="testimonials container"></section>
+      <section class="testimonials container">
+        <div class="testimonial__cards">
+          <div class="testimonial__card">
+            <div class="testimonial__img">
+              <img src="./assets/profile-1.webp" alt="" />
+            </div>
+            <p class="testimonial__name heading">Wade Warren</p>
+            <p class="card__testimonial paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              lectus dolor elit eu porta.
+            </p>
+          </div>
+          <div class="testimonial__card">
+            <div class="testimonial__img">
+              <img src="./assets/proflie-2.webp" alt="" />
+            </div>
+            <p class="testimonial__name heading">Cody Fisher</p>
+            <p class="card__testimonial paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              lectus dolor elit eu porta.
+            </p>
+          </div>
+          <div class="testimonial__card">
+            <div class="testimonial__img">
+              <img src="./assets/profile-3.webp" alt="" />
+            </div>
+            <p class="testimonial__name heading">Cody Fisher</p>
+            <p class="card__testimonial paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              lectus dolor elit eu porta.
+            </p>
+          </div>
+        </div>
+      </section>
       <section class="services container">
         <div class="home__cards">
           <div class="home__card longboard">
@@ -182,35 +225,48 @@
           </ul>
           <iframe
             class="iframe__map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20365.140610187!2d-4.471300870083887!3d50.35457158556942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486b618420656893%3A0xc674bad3b1e251ba!2sLooe!5e0!3m2!1sen!2suk!4v1647858891734!5m2!1sen!2suk"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10619.674698121213!2d-5.109173570012214!3d50.41578570724579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486b0fc5eaf76b0f%3A0xb9cac4894733be3d!2sFistral%20Beach!5e0!3m2!1sen!2suk!4v1649621153181!5m2!1sen!2suk"
+            width="600"
+            height="450"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </section>
       <section class="contact container">
         <h2 class="heading heading--l">Contact us</h2>
-        <form class="form" action="#">
-          <div class="form__group">
-            <label for="name" class="contact__label">name</label>
-            <input type="text" name="name" />
-          </div>
-          <div class="form__group">
-            <label for="email" class="contact__label">email</label>
-            <input type="email" name="email" />
-          </div>
-          <div class="form__group">
-            <label for="message" class="contact__label">message</label>
-            <textarea
-              name="message"
-              class="contact__message"
-              cols="30"
-              rows="15"
-            ></textarea>
-          </div>
-          <button class="btn">Send</button>
-        </form>
+        <div class="contact__content">
+          <form class="form" action="#">
+            <div class="form__group">
+              <label for="name" class="contact__label">name</label>
+              <input type="text" name="name" />
+            </div>
+            <div class="form__group">
+              <label for="email" class="contact__label">email</label>
+              <input type="email" name="email" />
+            </div>
+            <div class="form__group">
+              <label for="message" class="contact__label">message</label>
+              <textarea
+                name="message"
+                class="contact__message"
+                cols="30"
+                rows="15"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Send</button>
+          </form>
+          <lottie-player
+            class="lottie watermelon"
+            src="./assets/62581-watermelon-enjoying-surfing-water.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -233,7 +289,9 @@
               <a href="./lessons.html" class="footer__link">surfing lessons</a>
             </li>
           </ul>
-          <ul class="foot__list">
+        </div>
+        <div aria-label="secondary navigation" class="footer__nav secondary">
+          <ul class="footer__list">
             <li class="footer__item">
               <a href="./contact.html" class="footer__link">Contact</a>
             </li>
@@ -250,10 +308,6 @@
             </li>
           </ul>
         </div>
-        <div class="phone" aria-label="phone number">
-          <i class="fa-solid fa-phone"></i>
-          <p>0000000000000</p>
-        </div>
         <address>
           <p>
             Bailey’s surf<br />
@@ -263,27 +317,34 @@
             PLXX 2XX
           </p>
         </address>
-        <div class="social">
-          <a href="#" class="social__link">
-            <i class="fab fa-facebook-square social__icon"></i>
-            <span class="hidden">facebook</span>
-          </a>
-          <a href="#" class="social__link messenger">
-            <i class="fab fa-facebook-messenger social__icon"></i>
-            <span class="hidden">facebook messenger</span>
-          </a>
-          <a href="#" class="social__link twitter">
-            <i class="fab fa-twitter twitter social__icon"></i>
-            <span class="hidden">twitter</span>
-          </a>
-          <a href="#" class="social__link twitter">
-            <i class="fab fa-instagram instagram social__icon"></i>
-            <span class="hidden">instagram</span>
-          </a>
+        <div class="other__contact">
+          <div class="phone" aria-label="phone number">
+            <i class="fa-solid fa-phone"></i>
+            <p>0000000000000</p>
+          </div>
+          <div class="social">
+            <a href="#" class="social__link">
+              <i class="fab fa-facebook-square social__icon"></i>
+              <span class="hidden">facebook</span>
+            </a>
+            <a href="#" class="social__link messenger">
+              <i class="fab fa-facebook-messenger social__icon"></i>
+              <span class="hidden">facebook messenger</span>
+            </a>
+            <a href="#" class="social__link twitter">
+              <i class="fab fa-twitter twitter social__icon"></i>
+              <span class="hidden">twitter</span>
+            </a>
+            <a href="#" class="social__link twitter">
+              <i class="fab fa-instagram instagram social__icon"></i>
+              <span class="hidden">instagram</span>
+            </a>
+          </div>
         </div>
         <p class="paragraph copyright">&copy; copyright Bailey’s surf 2022</p>
       </div>
     </footer>
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>
