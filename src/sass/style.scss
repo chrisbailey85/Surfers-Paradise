@@ -29,7 +29,7 @@ label {
   font-size: 1rem;
 }
 .heading--xxl {
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 .heading--l {
   font-size: 2rem;
@@ -93,7 +93,7 @@ label {
     color: $white;
     font-family: 'Kalam', cursive;
     text-transform: capitalize;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     width: min-content;
     transition: color 0.3s ease-in-out;
     &.active::before {
@@ -105,6 +105,9 @@ label {
       bottom: 5px;
       left: 0;
     }
+  }
+  &__item {
+    margin-bottom: 1rem;
   }
   &.open {
     transform: scale(1, 1);
@@ -572,6 +575,10 @@ section:not(.banner) {
       justify-content: space-between;
       align-items: center;
     }
+  }
+
+  .nav__item {
+    margin-bottom: 0;
   }
   .heading--l {
     font-size: 3rem;

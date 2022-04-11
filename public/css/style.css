@@ -126,7 +126,7 @@ label {
 }
 
 .heading--xxl {
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 .heading--l {
@@ -191,7 +191,7 @@ label {
   color: #fafafa;
   font-family: "Kalam", cursive;
   text-transform: capitalize;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   width: min-content;
   transition: color 0.3s ease-in-out;
 }
@@ -203,6 +203,9 @@ label {
   position: absolute;
   bottom: 5px;
   left: 0;
+}
+.nav__item {
+  margin-bottom: 1rem;
 }
 .nav.open {
   transform: scale(1, 1);
@@ -660,6 +663,10 @@ section:not(.banner) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .nav__item {
+    margin-bottom: 0;
   }
 
   .heading--l {
