@@ -18,12 +18,14 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Bailey's Surf</title>
+    <title>Surfer’s Paradise - contact</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="logo"></div>
+        <a href="./index.html" class="logo__link">
+          <div class="logo"></div>
+        </a>
         <nav class="navbar">
           <button
             class="hamburger hamburger--vortex"
@@ -40,7 +42,7 @@
           <div id="navigation" class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#" class="nav__link active">Home</a>
+                <a href="#" class="nav__link">Home</a>
               </li>
               <li class="nav__item">
                 <a href="./surfboard.html" class="nav__link">Surfboard Hire</a>
@@ -52,7 +54,7 @@
                 <a href="./lessons.html" class="nav__link">lessons</a>
               </li>
               <li class="nav__item">
-                <a href="./contact.html" class="nav__link">Contact</a>
+                <a href="./contact.html" class="nav__link active">Contact</a>
               </li>
             </ul>
           </div>
@@ -69,50 +71,59 @@
           muted
         ></video>
         <div class="banner__text">
-          <h1 class="heading heading--xxl">Bailey's Surf</h1>
+          <h1 class="heading heading--xxl">Surfer’s Paradise</h1>
         </div>
         <p class="heading banner--heading">Contact Us</p>
       </section>
       <section class="contact container">
         <h2 class="heading heading--l">Contact us</h2>
-        <form class="form" action="#">
-          <div class="form__group">
-            <label for="name" class="contact__label">name</label>
-            <input type="text" name="name" />
-          </div>
-          <div class="form__group">
-            <label for="email" class="contact__label">email</label>
-            <input type="email" name="email" />
-          </div>
-          <div class="form__group">
-            <label for="message" class="contact__label">message</label>
-            <textarea
-              name="message"
-              class="contact__message"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </div>
-          <button class="btn">Send</button>
-        </form>
+        <div class="contact__content">
+          <form class="form" action="#">
+            <div class="form__group">
+              <label for="name" class="contact__label">name</label>
+              <input type="text" name="name" />
+            </div>
+            <div class="form__group">
+              <label for="email" class="contact__label">email</label>
+              <input type="email" name="email" />
+            </div>
+            <div class="form__group">
+              <label for="message" class="contact__label">message</label>
+              <textarea
+                name="message"
+                class="contact__message"
+                cols="30"
+                rows="15"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Send</button>
+          </form>
+          <lottie-player
+            class="lottie watermelon"
+            src="./assets/62581-watermelon-enjoying-surfing-water.json"
+            background="transparent"
+            speed="2"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
       </section>
-
       <section class="faq container">
         <h2 class="heading faq--heading heading--l">Faq</h2>
-        <div class="faq__content">
-          <ul class="faq__list">
+        <div class="faq__content faq__content--home">
+          <ul class="faq__list faq__home">
             <li>
               <button
-                class="faq__btn"
+                class="faq__btn active"
                 aria-expanded="false"
                 aria-controls="question-one
               "
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.<i
-                  class="fa-solid fa-chevron-up active"
+                  class="fa-solid fa-chevron-up"
                 ></i>
               </button>
-              <p class="paragraph faq__paragraph" id="question-one">
+              <p class="paragraph faq__paragraph active" id="question-one">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
                 tellus dictumst eget rutrum maecenas habitant senectus.
                 Facilisis vestibulum.
@@ -171,11 +182,14 @@
             </li>
           </ul>
           <iframe
-            class="iframe__map iframe__contact"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20365.140610187!2d-4.471300870083887!3d50.35457158556942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486b618420656893%3A0xc674bad3b1e251ba!2sLooe!5e0!3m2!1sen!2suk!4v1647858891734!5m2!1sen!2suk"
+            class="iframe__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10619.674698121213!2d-5.109173570012214!3d50.41578570724579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486b0fc5eaf76b0f%3A0xb9cac4894733be3d!2sFistral%20Beach!5e0!3m2!1sen!2suk!4v1649621153181!5m2!1sen!2suk"
+            width="600"
+            height="450"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </section>
@@ -256,5 +270,6 @@
       </div>
     </footer>
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>

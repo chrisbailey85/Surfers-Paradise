@@ -2,9 +2,11 @@ const hamburger = document.querySelector('.hamburger')
 const faqParagraph = document.querySelectorAll('.faq__paragraph')
 const faqBtn = document.querySelectorAll('.faq__btn')
 const nav = document.querySelector('.nav')
+const body = document.querySelector('body')
 
 hamburger.addEventListener('click', () => {
   nav.classList.toggle('open')
+  body.classList.toggle('body--overflow')
   hamburger.classList.toggle('is-active')
   nav.classList.contains('is-active')
     ? (hamburger.ariaExpanded = true)
